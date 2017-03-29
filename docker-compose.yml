@@ -2,6 +2,6 @@ version: '3'
 
 services:
   server:
-    image: mnwalalm/example-webserver
+    image: mnwalalm/example-webserver:production
     ports: 
       - "8080:8080"
