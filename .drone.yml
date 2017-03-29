@@ -4,4 +4,4 @@ pipeline:
   volumes:
    - /var/run/docker.sock:/var/run/docker.sock
   commands:
-   - docker build -t mnwalalm/example-webserver
+   - docker build -t mnwalalm/example-webserver .
