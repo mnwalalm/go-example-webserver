@@ -1,14 +1,14 @@
 pipeline:
- build:
-  image: docker
-  volumes:
-   - /var/run/docker.sock:/var/run/docker.sock
-  commands:
-   - docker build -t mnwalalm/example-webserver .
+  build:
+    image: docker
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+     - docker build -t mnwalalm/example-webserver .
   
   test:
     image: docker
     volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
     commands:
-        - docker run mnwalalm/example-webserver /test.sh
+      - docker run mnwalalm/example-webserver /test.sh
