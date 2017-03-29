@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", hello)
+	http.HandleFunc("/", hello )
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatal("Failed to start server: ", err)
@@ -14,5 +14,5 @@ func main() {
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello From Golang"))
+	w.Write([]byte("Hello From Golang and from Martin"))
 }
